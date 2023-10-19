@@ -1,0 +1,685 @@
+<dialog id="num01-maquette">
+    <a href="#num01" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h3>Maquette</h3>
+        <!-- <img src="assets/images/ex1/num1-maquette.gif" alt="" /> -->
+        <video src="assets/images/ex1/num1-demo.mp4" autoplay muted loop></video>
+        <p class="close">Cliquez à l'extérieur pour fermer la fenêtre</p>
+    </div>
+</dialog>
+<dialog id="num02-maquette">
+    <a href="#num02" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h3>Maquette</h3>
+        <video src="assets/images/ex1/num2-demo.mp4" autoplay muted loop></video>
+        <p class="close">Cliquez à l'extérieur pour fermer la fenêtre</p>
+    </div>
+</dialog>
+<dialog id="num03-maquette">
+    <a href="#num03" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h3>Maquette</h3>
+        <video src="assets/images/ex1/num3-demo.mp4" autoplay muted loop></video>
+        <p class="close">Cliquez à l'extérieur pour fermer la fenêtre</p>
+    </div>
+</dialog>
+<dialog id="num04-maquette">
+    <a href="#num04" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h3>Maquette</h3>
+        <video src="assets/images/ex1/num4-demo.mp4" autoplay muted loop></video>
+        <p class="close">Cliquez à l'extérieur pour fermer la fenêtre</p>
+    </div>
+</dialog>
+<dialog id="num05-maquette">
+    <a href="#num05" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h3>Maquette</h3>
+        <video src="assets/images/ex1/num5-demo.mp4" autoplay muted loop></video>
+        <p class="close">Cliquez à l'extérieur pour fermer la fenêtre</p>
+    </div>
+</dialog>
+<dialog id="num01-explication">
+    <a href="#num01" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h3>HTML</h3>
+        <p>
+            La structure HTML est déjà fournie. Veuillez prendre le temps de regarder et d'analyser le fichier
+            <strong>partials/ex1/_num1.html.</strong>
+        </p>
+        <h3>MIXIN TYPO</h3>
+        <p>
+            À partir de maintenant, nous avons modifié la méthode SCSS
+            <strong>typo</strong>
+            (dans styles/tools/typo.scss). La méthode s'attend à recevoir
+            <strong>4 paramètres</strong>
+            , dont les deux derniers ne sont pas obligatoires :
+        </p>
+        <ol>
+            <li>
+                Grosseur du texte à la résolution la plus petite (
+                <strong>en px</strong>
+                ).
+            </li>
+            <li>
+                Grosseur du texte à la plus grande résolution (
+                <strong>en px</strong>
+                ).
+            </li>
+            <li>
+                Grandeur de la résolution la plus petite (en px,
+                <strong>par défaut 480px</strong>
+                ).
+            </li>
+            <li>
+                Grandeur de la résolution la plus grande (en px,
+                <strong>par défaut 1440px</strong>
+                ).
+            </li>
+        </ol>
+        <p>Vous pouvez donc l'utiliser de deux manières différentes :</p>
+        <ul>
+            <li>font-size: #{typo(18px, 32px)}</li>
+            <li>font-size: #{typo(18px, 32px, 480px, 1200px)}</li>
+        </ul>
+        <h3>Texte</h3>
+        <p>
+            Créer un fichier
+            <strong></strong>
+            text.scss dans le dossier components et assurez-vous qu'il fonctionne dans votre projet. 
+        </p>
+        <ul>
+            <li>
+                Ajouter une règle pour
+                <strong>.text</strong>
+            </li>
+            <li>
+                Régler la taille du
+                <strong>titre h2</strong>
+                à l'intérieur de la section à
+                <strong>60px en desktop</strong>
+                et
+                <strong>40px en mobile</strong>
+                .
+            </li>
+            <li>
+                Régler la taille du
+                <strong>titre h3</strong>
+                à l'intérieur de la section à
+                <strong>40px en desktop</strong>
+                et
+                <strong>32px en mobile</strong>
+                .
+            </li>
+            <li>
+                Régler la taille des
+                <strong>paragraphes</strong>
+                à l'intérieur de la section à
+                <strong>18px en desktop</strong>
+                et
+                <strong>16px en mobile</strong>
+                .
+            </li>
+        </ul>
+        <h3>Bouton</h3>
+        <p>Créer un fichier button.scss dans le dossier components et assurez-vous qu'il fonctionne dans votre projet.</p>
+        <ul>
+            <li>
+                Ajouter une règle pour
+                <strong>.button</strong>
+            </li>
+            <li>
+                Régler la couleur de fond à
+                <strong>color-primary</strong>
+            </li>
+            <li>
+                Régler la bordure à
+                <strong>3px solid et color-primary</strong>
+            </li>
+            <li>
+                Régler la couleur des textes
+                <strong>à blanc</strong>
+            </li>
+            <li>
+                Régler la marge intérieur à
+                <strong>10px</strong>
+                en haut/bas et
+                <strong>30px</strong>
+                à gauche/droite
+            </li>
+        </ul>
+        <p>
+            À l’aide de l’
+            <a href="https://css-tricks.com/the-sass-ampersand/#aa-using-the-with-pseudo-classes" target="_blank">imbrication</a>
+            , ajuster l’état de survol du bouton
+        </p>
+        <ul>
+            <li>
+                Régler la couleur du texte à
+                <strong>color-primary</strong>
+            </li>
+            <li>
+                Régler la couleur de fond à
+                <strong>transparent</strong>
+            </li>
+            <li>Assurez-vous qu’il n’y ait pas de ligne sous le texte</li>
+        </ul>
+        <h3>Transition</h3>
+        <p>
+            La propriété transition doit avoir
+            <strong>3 valeurs</strong>
+            pour fonctionner adéquatement :
+            <strong>la vitesse de la transition</strong>
+            (règle de pouce, jamais plus que 0.5s),
+            <strong>les propriétés qui seront affectées par la transition</strong>
+            (utilisez all pour affecter toutes les propriétés) et
+            <strong>l'effet de transition</strong>
+            (easing).
+        </p>
+        <p>
+            Pour conclure ce numéro, vous devez ajouter une transition sur le bouton qui affecte
+            <strong>toutes les propriétés</strong>
+            qui changent et qui dure
+            <strong>0.3 seconde</strong>
+            avec un effet de transition
+            <strong>ease-out</strong>
+            .
+        </p>
+
+        <p>
+            Testez la propriété d'abord sur le survol du bouton. Observez ce qui se passe au survol, puis lorsque vous quittez le bouton. Déplacez ensuite la propriété dans la classe <strong>.button</strong> de base et observez les différences. Une fois la différence aperçue,
+            dans le HTML, <strong>ajouter un paragraphe sous le bouton</strong>
+            qui explique la différence entre l'ajout de la propriété transition directement sur le bouton ou en utilisant le survol du bouton.
+        </p>
+    </div>
+</dialog>
+<dialog id="num02-explication">
+    <a href="#num02" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h3>HTML</h3>
+        <p>
+            La structure HTML est déjà fournie. Veuillez prendre le temps de regarder et d'analyser le fichier
+            <em>partials/ex1/_num2.html</em>
+            .
+        </p>
+
+        <h3>STYLE DE BASE</h3>
+        <p>
+            Créez un fichier
+            <strong>header.scss</strong>
+            dans le dossier components et assurez-vous qu'il fonctionne dans votre projet. Une bonne pratique lors de la définition de nos règles CSS est de
+            minimiser autant que possible le ciblage des balises HTML.
+        </p>
+        <ul>
+            <li>
+                Ajouter la classe
+                <strong>"header"</strong>
+                à la balise &lt;header&gt;.
+            </li>
+            <li>
+                Configurer le flexbox pour que le logo soit aligné complètement à gauche, la navigation soit alignée complètement à droite, et que le tout soit
+                centré verticalement.
+            </li>
+            <li>
+                Ajouter la classe
+                <strong>"logo"</strong>
+                à la balise &lt;a&gt; qui contient le logo.
+            </li>
+            <li>
+                Le logo ne sera pas fluide et devrait avoir une taille équivalente de
+                <strong>48px</strong>
+                (sans les px, pensez à une autre unité),
+                <strong>en gras</strong>
+                et
+                <strong>tout en majuscules</strong>
+                .
+            </li>
+            <li>
+                Ajouter la classe
+                <strong>"nav"</strong>
+                à la balise &lt;nav&gt;.
+            </li>
+            <li>Assurez-vous que les listes &lt;ul&gt; n'ont pas de puces.</li>
+            <li>
+                Configurez les listes &lt;ul&gt; pour que les éléments &lt;li&gt; soient alignés
+                <strong>côte à côte avec un espace de 30px entre eux</strong>
+                .
+            </li>
+        </ul>
+
+        <p>Veillez à éviter les valeurs arbitraires. Pour réaliser les étapes précédentes, vous n'avez pas besoin de chiffres aléatoires.</p>
+
+        <h3>BOUTON MENU MOBILE</h3>
+        <p>
+            Pour cette étape, vous pouvez réduire la largeur de votre écran et observer à quel moment l'espace devient trop restreint pour afficher à la fois la
+            navigation et le logo sur une seule ligne. À ce stade, nous allons créer un media query qui masquera la navigation et fera apparaître un bouton de
+            type hamburger.
+        </p>
+
+        <p>Nous allons commencer par ajouter une icône de menu dans notre en-tête et nous assurer qu'elle est cachée par défaut.</p>
+
+        <h4>Dans le HTML</h4>
+        <ul>
+            <li>
+                Ajouter une balise
+                <strong>&lt;button&gt;</strong>
+                avec la classe
+                <strong>menu-toggle</strong>
+                qui contient l'icône de menu. C'est l'exemple parfait d'une situation où vous devriez utiliser une balise &lt;button&gt; plutôt qu'une balise
+                &lt;a&gt;. Lorsqu'on clique dessus, nous ne sommes pas dirigés vers une autre page, il s'agit donc d'un &lt;button&gt;.
+            </li>
+        </ul>
+        <h4>Dans le CSS (idéalement dans votre fichier scss qui gère les boutons)</h4>
+        <ul>
+            <li>
+                Ajouter une règle pour
+                <strong>.menu-toggle</strong>
+            </li>
+            <li>
+                Retirer la
+                <strong>bordure</strong>
+                et
+                <strong>l'arrière-plan</strong>
+                du bouton.
+            </li>
+            <li>
+                Régler la couleur pour
+                <strong>--color-primary</strong>
+                .
+            </li>
+            <li>
+                Régler la largeur de l'icône pour qu'elle soit de
+                <strong>32px</strong>
+                . N'oubliez pas que notre icône a une largeur et une hauteur de 1em, ce qui signifie qu'elle prend la largeur et la hauteur du font-size de son
+                parent.
+            </li>
+        </ul>
+        <p>
+            Il est maintenant nécessaire de cacher le menu par défaut. La question à se poser est de savoir à quel endroit il faut ajouter la règle CSS pour cacher le menu. Doit-il être caché dans le fichier button ou dans le fichier header? Pour y répondre, il faut se demander si nous le cachons parce qu'il est
+            situé dans l'en-tête, ce qui est effectivement le cas. Par conséquent,
+            <strong>nous allons appliquer les styles pour le cacher dans le fichier header.scss</strong>
+            .
+        </p>
+        <p>
+            À l'aide de l'imbrication,
+            <strong>ciblez le menu-toggle</strong>
+            lorsqu'il est dans le header et assurez-vous qu'il ne soit plus affiché en modifiant sa propriété display.
+        </p>
+        <pre>
+        .header {
+            . menu-toggle { 
+                display: none; 
+            } 
+        }
+        </pre>
+
+        <h3>Responsive</h3>
+        <p>
+            Nous sommes maintenant arrivés à l'étape où nous devons nous assurer que la navigation se cache et que le bouton de menu apparaît, lorsque l'espace
+            disponible est insuffisant. En testant différentes résolutions, nous constatons que dans la version tablette (768px), l'espace devient insuffisant.
+        </p>
+        <pre>
+            @media screen and (max-width: 768px) {
+                
+            }
+        </pre>
+        <p>
+            Cette ligne permet de définir des règles ou des changements de propriété uniquement si votre écran est plus petit que 768px. Cependant, la valeur
+            768px sera utilisée à plusieurs reprises dans votre projet, il serait judicieux d'utiliser une variable.
+            <strong>Nos variables 'breakpoints' sont conçues pour cette situation.</strong>
+        </p>
+        <pre>
+            @media screen and (max-width: $breakpoint-sm) { 
+                
+            }
+        </pre>
+        <p>
+            Utiliser cette ligne avec de l'imbrication dans votre
+            <strong>menu-toggle</strong>
+            pour modifier sa propriété display de manière à ce qu'il apparaisse.
+        </p>
+        <pre>
+            .header { 
+                [...] 
+                .menu-toggle { 
+                    display: none; 
+                    @media screen and (max-width: $breakpoint-sm) {
+                         display: block; 
+                    } 
+                } 
+            }
+        </pre>
+        <p>Utiliser la même technique pour que la navigation ait l'effet contraire et se cache lorsque l'écran est plus petit que 768px.</p>
+    </div>
+</dialog>
+<dialog id="num03-explication">
+    <a href="#num03" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h3>Contexte</h3>
+        <p>
+            <strong>Nous utilisons le même style de menu que dans l'exercice précédent</strong>
+            , mais cette fois le logo est plus grand, et il y a plus d'éléments de menu. Il est donc probable que le breakpoint que nous avons précédemment
+            utilisé ne fonctionnera plus. Commençons par la première étape et appliquons les styles à notre menu.
+        </p>
+
+        <h3>HTML</h3>
+        <p>
+            La structure HTML est déjà fournie. Veuillez prendre le temps de regarder et d'analyser le fichier
+            <strong>partials/ex1/_num3.html</strong>
+            .
+        </p>
+        <ul>
+            <li>
+                Ajouter les classes
+                <strong>.header</strong>
+                ,
+                <strong>.logo</strong>
+                ,
+                <strong>.nav</strong>
+                aux endroits appropriés
+            </li>
+            <li>
+                Ajouter le bouton
+                <strong>.menu-toggle</strong>
+            </li>
+        </ul>
+        <p>
+            Vous devriez maintenant avoir un en-tête desktop
+            <strong>similaire à celui de l'exercice 2</strong>
+            . Cependant, si vous testez cet en-tête à différentes résolutions, vous constaterez qu'à certains moments, le menu peut passer sur deux lignes ou
+            même déborder de l'espace disponible. Nous allons modifier les règles des media queries et s’assurer de cibler uniquement cet en-tête.
+        </p>
+
+        <p>
+            Au lieu de changer la classe
+            <strong>header</strong>
+            en
+            <strong>header2</strong>
+            , nous allons ajouter une deuxième classe de type modificateur (avec un suffixe --) pour conserver TOUS les styles du header qui fonctionnent déjà
+            et simplement ajouter nos styles différents.
+        </p>
+        <ul>
+            <li>
+                Ajouter une classe
+                <strong>header--compact</strong>
+                à votre header
+            </li>
+        </ul>
+
+        <p>
+            Pour modifier les styles du header, il est important de s'assurer d'avoir un poids équivalent ou supérieur au sélecteur que nous voulons modifier.
+            C'est pourquoi nous plaçons généralement la règle modificateur sous la règle de base. Pour affecter les enfants, il est essentiel de respecter le
+            poids des sélecteurs et de faire la même imbrication que la règle de base. Prenons un exemple ensemble.
+        </p>
+        <ul>
+            <li>
+                Ajouter une règle
+                <strong>.header--compact</strong>
+                sous votre règle .header
+            </li>
+            <li>
+                En utilisant l’imbrication, ajouter une règle qui cible
+                <strong>.menu-toggle</strong>
+            </li>
+            <li>En utilisant l’imbrication ajouter un media query(1024px) pour afficher le bouton.</li>
+        </ul>
+
+        <pre>
+            .header--compact {
+                .menu-toggle {
+                    @media screen and (max-width: $breakpoint-md) {
+                        display: block;
+                    }
+                }
+            } 
+        </pre>
+        <p>
+            Répéter maintenant la même procédure pour que la navigation (nav) change de comportement à partir de 1024px également. En tant que défi
+            supplémentaire, assurez-vous qu'en dessous de 1024px, le logo ait une taille de 32px.
+        </p>
+    </div>
+</dialog>
+<dialog id="num04-explication">
+    <a href="#num04" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h3>HTML</h3>
+        <p>Le contenu pour cet exercice vous est fourni, mais nous allons créer la structure des cartes et des colonnes.</p>
+        <p>
+            Pour une dernière fois, la structure que nous vous proposons dans cet exercice est celle que vous devez utiliser pour toutes les mises en page de
+            type carte que vous aurez à créer d'ici la fin de votre parcours. Nous utiliserons
+            <strong>.card</strong>
+            ,
+            <strong>.card__media</strong>
+            et
+            <strong>.card__content</strong>
+            . Voici l'exemple pour une carte, à vous de l'appliquer pour les trois.
+        </p>
+        <pre>
+            &lt;a href="#" class="card"&gt;
+                 &lt;div class="card__media"&gt;
+                   [INSÉRER IMAGE ICI]
+                 &lt;/div&gt;
+                 &lt;div class="card__content"&gt;
+                     [INSÉRER CONTENU ICI]
+                 &lt;/div&gt;
+             &lt;/a&gt;        
+        </pre>
+        <h3>STYLES</h3>
+        <p>
+            Pour commencer, établissez quelques styles de base pour nos cartes. Créez un fichier
+            <strong>card.scss</strong>
+            dans le dossier components et assurez-vous qu'il fonctionne dans votre projet.
+        </p>
+        <ul>
+            <li>
+                Ajouter une règle pour
+                <strong>.card</strong>
+            </li>
+            <li>
+                Régler la couleur du contenu à
+                <strong>noir</strong>
+                .
+            </li>
+            <li>
+                Utiliser l'imbrication pour vous assurer qu'en état de survol,
+                <strong>il n'y ait pas de ligne décorative</strong>
+                .
+            </li>
+        </ul>
+        <p>La deuxième étape consiste à faire en sorte que notre image occupe tout l'espace de la carte.</p>
+        <ul>
+            <li>
+                Ajouter une règle pour
+                <strong>.card__media</strong>
+                .
+            </li>
+            <li>
+                Utiliser l'imbrication pour régler img de manière à ce qu'elle prenne
+                <strong>100% de la largeur</strong>
+                .
+            </li>
+            <li>
+                N'oublier pas que pour régler l'espace vide sous l'image vous pouvez mettre l'image en
+                <strong>display: block</strong>
+                .
+            </li>
+        </ul>
+        <p>
+            Nous allons maintenant créer les styles de base pour
+            <strong>card__content</strong>
+            .
+        </p>
+        <ul>
+            <li>
+                Ajouter une règle pour
+                <strong>.card__content</strong>
+                .
+            </li>
+            <li>
+                Ajouter une bordure de
+                <strong>1px</strong>
+                de couleur
+                <strong>--color-bg-primary</strong>
+                et de type
+                <strong>solid</strong>
+                .
+            </li>
+            <li>
+                Ajouter un padding de
+                <strong>20px tout autour</strong>
+                .
+            </li>
+            <li>
+                Utiliser l'imbrication pour définir que le
+                <strong>h4 n'a aucune marge</strong>
+                .
+            </li>
+        </ul>
+        <p>
+            Nos cartes sont actuellement assez grandes, il serait maintenant judicieux de préparer nos colonnes. Pour ce faire, ajouter un nouveau div qui
+            englobe vos trois cartes et qui a la classe
+            <strong>.cards</strong>
+            .
+        </p>
+        <ul>
+            <li>
+                Ajouter une règle pour
+                <strong>.cards</strong>
+                .
+            </li>
+            <li>
+                Ajouter un style
+                <strong>display: grid</strong>
+                ;.
+            </li>
+            <li>
+                Régler pour avoir
+                <strong>3 colonnes égales d'une fraction</strong>
+                .
+            </li>
+            <li>
+                Régler pour avoir un espace de
+                <strong>30px entre les éléments</strong>
+                .
+            </li>
+        </ul>
+
+        <p>Nos cartes sont maintenant disposées en colonne, mais elles ne sont pas de la même taille.</p>
+        <ul>
+            <li>
+                Ajouter
+                <strong>height: 100%</strong>
+                à votre règle pour .card__content (attention, cela peut provoquer un débordement de la section).
+            </li>
+            <li>
+                Régler .card pour qu'il soit
+                <strong>flexible</strong>
+                et en
+                <strong>direction de colonne</strong>
+                .
+            </li>
+        </ul>
+
+        <p>Pour ajouter une animation sur l'image en survol :</p>
+        <ul>
+            <li>
+                Dans la règle :hover de votre carte, ajouter une règle pour img de .card__media et définissez une
+                <strong>transformation de type scale à 1.1</strong>
+                .
+            </li>
+        </ul>
+
+        <p>Pour gérer le débordement d'image :</p>
+
+        <ul>
+            <li>
+                Dans la règle de .card__media, ajouter
+                <strong>overflow: hidden</strong>
+                , ce qui cachera tout contenu dépassant de la zone de .card__media.
+            </li>
+        </ul>
+
+        <p>Si vous regarder le résultat, l'image vient de rétrécir. Pour éviter que .card__media ne rétrécisse :</p>
+
+        <ul>
+            <li>
+                Dans la règle de .card__media, ajouter
+                <strong>flex-shrink: 0</strong>
+                .
+            </li>
+        </ul>
+
+        <p>
+            Pour terminer l'animation,
+            <strong>ajouter une transition</strong>
+            . Rappelez-vous de l'exercice 1 pour choisir l'endroit idéal où ajouter la transition
+            <strong>0.3s all ease-out</strong>
+            .
+        </p>
+        <h3>RESPONSIVE</h3>
+        <p>
+            Nous allons terminer cet exercice en ajoutant les règles de media query pour garantir que lorsque vous changez de résolution, vos colonnes passent
+            de 3 colonnes en desktop à 2 sur tablette, puis finalement à 1 sur mobile.
+        </p>
+        <p>Dans votre règle de .cards, imbriquez un media query qui modifie les styles pour 768px (n'oubliez pas d'utiliser vos variables).</p>
+
+        <ul>
+            <li>
+                Réglez le grid-template-columns pour avoir
+                <strong>une seule colonne d'une fraction</strong>
+                .
+            </li>
+        </ul>
+        <p>En testant, vous devriez constater que vous avez une seule colonne lorsque vous êtes dans une taille d'écran inférieure à 768px.</p>
+
+        <p>Sous votre media query de 768px, ajoutez un nouveau media query qui modifie les styles à 1024px.</p>
+        <ul>
+            <li>
+                Réglez le grid-template-columns pour avoir
+                <strong>deux colonnes d'une fraction</strong>
+                .
+            </li>
+        </ul>
+        <p>
+            Très bien, cela fonctionne. Oh, en fait, si vous regardez en dessous de 1024px, vous aurez maintenant toujours 2 colonnes. C'est le poids des
+            sélecteurs qui crée ce problème. Dans l'approche
+            <strong>"desktop first"</strong>
+            , l'ordre de nos media queries devrait toujours être du
+            <strong>plus grand au plus petit</strong>
+            . Inversez l'ordre de vos media queries.
+        </p>
+        <h3>Bravo! Vous avez terminé ce numéro.</h3>
+    </div>
+</dialog>
+<dialog id="num05-explication">
+    <a href="#num05" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h3>Contexte</h3>
+        <p>
+            Dans ce numéro,
+            <strong>vous êtes laissé à vous-même</strong>
+            . Voici quand même quelques indications pour vous aider à terminer plus rapidement.
+        </p>
+        <h3>HTML</h3>
+        <p>
+            Utiliser la même structure
+            <strong>.cards > .card > .card__media + .card__content</strong>
+            que vous avez créée à l'étape précédente (numéro 4), et vous devriez déjà avoir une structure de colonnes et de cartes partiellement fonctionnelle.
+        </p>
+
+        <p>
+            À l'aide d'une classe modificatrice sur vos <strong>.card</strong>(par exemple, .card--icon), vous pouvez changer <strong>la direction du flex</strong> pour que vos images soient
+            côte à côte, et modifier le style de <strong>.card__content</strong> pour qu'il n'y ait plus de <strong>bordure</strong> et que la <strong>hauteur</strong> (height) soit à auto.
+        </p>
+        <p>
+            À l'aide d'un modificateur de classe sur votre <strong>cards</strong> (par exemple, .cards--col2), vous pouvez changer le grid-template-columns pour avoir </strong>deux
+            colonnes de fraction égale</strong>.
+        </p>
+        <h3>Responsive</h3>
+        <p>Finalement, il ne vous reste qu'à ajuster <strong>deux media queries</strong> pour respecter les critères suivants :</p>
+        <ul>
+            <li>Pour les résolutions plus petites que 1024 pixels, assurez-vous que <strong>l'icône soit positionnée au-dessus du texte</strong>.</li>
+            <li>Pour les résolutions plus petites que 768 pixels, assurez-vous que vos cartes soient disposées <strong>en une seule colonne</strong> (ajuster sur .cards).</li>
+        </ul>
+    </div>
+</dialog>
