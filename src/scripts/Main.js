@@ -1,14 +1,12 @@
 import Icons from './utils/Icons';
-Icons.load();
 
 class Main {
-
   constructor() {
+    Icons.load();
+
     this.init();
   }
 
-  init() {
-    
-  }
+  init() {}
 }
 new Main();
