@@ -6,9 +6,11 @@
     --font-primary: 'Montserrat', sans-serif;
     --font-secondary: 'Fira Code', monospace;
 
-    --font-size-content: #{typo(16px, 18px)};
+    --font-size-content: #{typo(18px)};
 
     /// Grosseur des textes
-    --font-size-h1: #{typo(28px, 42px)};
-    --font-size-h2: #{typo(16px, 32px)};
+    --font-size-h1: #{typo(60px)};
+    --font-size-h2: #{typo(45px)};
+    --font-size-h3: #{typo(30px)};
+    --font-size-h4: #{typo(20px)};
 }

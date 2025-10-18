@@ -1,0 +1,111 @@
+/* ==========================================================================
+     CODE SPÉCIFIQUE À CE LABORATOIRE / EXAMEN / EXERCICE
+     Tu m'as trouvé, ne touche à rien cependant, mais viens nous voir pour un collant.
+     ========================================================================== */
+
+/*
+   Variables pour l'exercice (ne pas toucher)
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+$z_expo: cubic-bezier(0.19, 1, 0.22, 1);
+$z_color-bg: #eee;
+$z_color-card: #fff;
+$z_color-black: #000;
+$z_font-primary: Montserrat, sans-serif;
+$z_color-primary: tomato;
+/*
+   Typography
+   ========================================================================== */
+// h1
+.z_h1 {
+    font: bold 4rem/1 $z_font-primary;
+    margin-bottom: 3rem !important;
+}
+// h2
+.z_h2 {
+    font: bold 3rem/1 $z_font-primary;
+    border-bottom: 1px solid #000;
+    padding: 1rem 0 !important;
+    margin: 2rem 0 !important;
+}
+
+.z_h3 {
+    font: bold 2rem/1 $z_font-primary;
+    border: none !important;
+    color: inherit;
+    text-decoration: inherit;
+    padding: 2.5rem 0 !important;
+
+    small {
+        display: block;
+        font-weight: 400;
+        margin-top: 0.5em;
+        font-size: 0.7em;
+        opacity: 0.4;
+    }
+}
+
+/*
+   components
+   ========================================================================== */
+/*card section/wrapper */
+.z_body {
+    background: $z_color-bg !important;
+
+    .z_wrapper {
+        max-width: 1440px !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+        padding: 4rem 0 !important;
+    }
+    /* .cards */
+    .z_cards {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 1rem !important;
+
+        + .z_cards {
+            margin-top: 2rem !important;
+        }
+    }
+    /* .cards */
+    .z_card {
+        background: $z_color-card !important;
+        color: $z_color-black !important;
+        padding: 2rem !important;
+        text-decoration: none !important;
+        transition: 1s $z_expo !important;
+        position: relative !important;
+
+        .z_card_num {
+            color: $z_color-black !important;
+            position: relative !important;
+
+            &::after {
+                content: '' !important;
+                position: absolute !important;
+                top: 100% !important;
+                left: 0 !important;
+                height: 4px !important;
+                background: tomato !important;
+                width: 30px !important;
+                transition: 0.4s all $z_expo, 0.4s background $z_expo !important;
+            }
+        }
+
+        &:hover {
+            background: #000 !important;
+            color: #fff !important;
+            transform: scale(1.05) rotate(1deg) !important;
+
+            .z_card_num {
+                color: #fff !important;
+            }
+            .z_card_num::after {
+                background: #fff !important;
+                width: 100% !important;
+            }
+        }
+    }
+}
