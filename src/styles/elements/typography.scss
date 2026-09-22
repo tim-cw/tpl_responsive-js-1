@@ -1,5 +1,10 @@
 /* ==========================================================================
-   TYPOGRAPHY / ELEMENT
+   TYPOGRAPHY / ELEMENTS
+   Style de base (sans classe css) pour tous les éléments typographiques génériques
+   ========================================================================== */
+
+/*
+   HEADINGS
    ========================================================================== */
 
 h1,
@@ -38,4 +43,18 @@ h5 {
 
 h6 {
     font-size: var(--font-size-h6);
+}
+
+/*
+    LIENS
+    ========================================================================== */
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+
+    &:hover {
+        color: var(--color-primary);
+        text-decoration: underline;
+    }
 }
